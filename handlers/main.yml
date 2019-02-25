@@ -1,0 +1,14 @@
+---
+- name: mariadb start
+  service: name=mariadb state=started
+  when: ansible_os_family == "RedHat"
+
+- name: mysql start
+  service: name=mysql state=started
+
+- name: postfix start
+  service: name=postfix state=restarted
+
+- name: dovecot restart
+  service: name=dovecot state=restarted
+  when: ansible_os_family == "Debian"
