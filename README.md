@@ -31,7 +31,7 @@ git clone https://github.com/Nurlan199206/ansible-lemp
 
 and
 
-ansible-playbook --connection=local -s /etc/ansible/roles/ansible-lemp/nginx.yml
+ansible-playbook --connection=local -s /etc/ansible/roles/mailserver/nginx.yml
 
 
 
