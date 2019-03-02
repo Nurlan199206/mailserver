@@ -57,13 +57,12 @@
 
       - lineinfile:
           path: /etc/dovecot/conf.d/10-mail.conf
-          regexp: '^mail_location = maildir:~/Maildir '
-          insertafter: '^#   mail_location = maildir:~/Maildir '
-          line: 'mail_location = maildir:~/Maildir'
+          regexp: '^mail_location = mbox:~/mail:INBOX=/var/mail/%u'
+          insertafter: '^#   mail_location = maildir:~/Maildir'
         notify: dovecot restart
 
       - template:
-          src: /etc/ansible/roles/ansible-lemp/files/ubuntu/main.cf.j2
+          src: /etc/ansible/roles/mailserver/files/ubuntu/main.cf.j2
           dest: /etc/postfix/main.cf
           notify: postfix restart
 
