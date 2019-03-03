@@ -64,8 +64,7 @@
 
       - template:
           src: /etc/ansible/roles/mailserver/files/ubuntu/main.cf.j2
-          dest: /etc/postfix/main.cf
-          notify: postfix restart
+          dest: /etc/postfix/main.cf.ansible
 
       - name: Download roundcube
         get_url: 
