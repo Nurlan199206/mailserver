@@ -8,12 +8,13 @@ Ansible 2.7.5
 
 Centos 6/7
 
-php 5.4
+Postfix: 3.3.0
 
-nginx 1.14
+Dovecot: 2.2.33.2
 
-MariaDB Ver 15.1 Distrib 5.5.60
+mysql Ver 14.14 Distrib 5.7.25
 
+SpamAssassin version 3.4.2
 
 
 run command: 
