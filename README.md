@@ -1,4 +1,4 @@
-# nginx-php-fpm installation on CentOS 6/7 or Ubuntu 18.04/Debian9
+# Mail server for Ubuntu 18.04
 
 You need minimum 1GB RAM for succesfully run playbook.
 
@@ -6,7 +6,7 @@ Software version.
 
 Ansible 2.7.5
 
-Centos 6/7
+Ubuntu 18.04
 
 Postfix: 3.3.0
 
